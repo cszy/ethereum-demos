@@ -13,12 +13,15 @@ References: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cry
 ## Example 1 - TestRPC Via Command Line
  
 Install testrpc, a Node-based Ethereum client (effectively a simulated blockchain).
+
 `> npm install -g ethereumjs-testrpc`
  
 Install web3, the Ethereum Javascript API.
+
 `> npm install -g web3`
  
 Install Solidity (the main programming language that runs on the EVM) compiler.
+
 `> npm install -g solc`
  
 `> testrpc`
@@ -56,17 +59,21 @@ You’ll see the output of your compiled code. We’re most interested in the **
 The contract is now ready to be deployed to the example TestRPC blockchain.
  
 Ether from the account specified in the “from” will pay the **gas** required for miners to execute the contract.
+
 `> deployedContract = ExampleContract.new(['Bitcoin','Ether','Litecoin'],{data: byteCode, from: web3.eth.accounts[0], gas: 5000000})`
 
 `> contractInstance = ExampleContract.at(deployedContract.address)`
  
 Check how many votes Ether has.
+
 `> contractInstance.totalCountFor.call('Ether')`
  
 Vote for Ether. To vote from another account, use web3.eth.accounts[1], and so on.
+
 `> contractInstance.voteForToken('Ether', {from: web3.eth.accounts[0]})`
  
 Now see the total votes for Ether.
+
 `> contractInstance.totalVotesFor.call(‘Ether’).toLocaleString()`
  
 ## Example 2 - TestRPC Via Browser
