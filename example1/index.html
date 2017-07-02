@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example 1 - TestRPC Web3 DApp</title>
+</head>
+<body class="container">
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Token</th>
+                    <th>Votes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="token" id="token-1">
+                    <td class="token-name">Bitcoin</td>
+                    <td class="token-votes"></td>
+                    <td><a href="#" onclick="castVote(this)" data-id="1" class="vote-button" id="vote-button-1">Vote</a></td>
+                </tr>
+                <tr class="token" id="token-2">
+                    <td class="token-name">Ether</td>
+                    <td class="token-votes"></td>
+                    <td><a href="#" onclick="castVote(this)" data-id="2" class="vote-button" id="vote-button-2">Vote</a></td>
+                </tr>
+                <tr class="token" id="token-3">
+                    <td class="token-name">Litecoin</td>
+                    <td class="token-votes"></td>
+                    <td><a href="#" onclick="castVote(this)" data-id="3" class="vote-button" id="vote-button-3">Vote</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
