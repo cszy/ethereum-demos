@@ -23,6 +23,8 @@ Install web3, the Ethereum Javascript API.
 Install Solidity (the main programming language that runs on the EVM) compiler.
 
 `$ npm install -g solc`
+
+From your terminal, run:
  
 `$ testrpc`
  
@@ -33,6 +35,8 @@ Get an example smart contract [TODO] and save it as example.sol.
 This example smart contract allows us to conduct a poll, where users can vote for their favorite cryptocurrency.
  
 Now, we’ll compile this contract and deploy it to the example blockchain.
+
+From another terminal window:
  
 `$ node`
  
