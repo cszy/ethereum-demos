@@ -30,9 +30,9 @@ From your terminal, run:
  
 You’ll see addresses for 10 test accounts, as well as the information that this is running on localhost:8545.
  
-Get an example smart contract [TODO] and save it as example.sol.
+Save this example smart contract: https://github.com/cszy/ethereum-examples/blob/master/example.sol
 
-This example smart contract allows us to conduct a poll, where users can vote for their favorite cryptocurrency.
+This smart contract is for a poll, where users can vote for their favorite cryptocurrency.
  
 Now, we’ll compile this contract and deploy it to the example blockchain.
 
