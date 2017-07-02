@@ -12,11 +12,11 @@ References: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cry
  
 ## Example 1 - TestRPC Via Command Line
  
-Install *TestRPC*, a Node-based Ethereum client (effectively a simulated blockchain).
+Install **TestRPC**, a Node-based Ethereum client (effectively a simulated blockchain).
 
 `$ npm install -g ethereumjs-testrpc`
  
-Install *web3.js*, the Ethereum Javascript API.
+Install **web3.js**, the Ethereum Javascript API.
 
 `$ npm install -g web3`
  
