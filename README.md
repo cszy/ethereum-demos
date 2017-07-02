@@ -20,7 +20,7 @@ Install web3, the Ethereum Javascript API.
 
 `$ npm install -g web3`
  
-Install Solidity (the main programming language that runs on the EVM) compiler.
+Install **Solidity** (the main programming language that runs on the EVM) compiler.
 
 `$ npm install -g solc`
 
@@ -30,7 +30,7 @@ From your terminal, run:
  
 You’ll see addresses for 10 test accounts, as well as the information that this is running on localhost:8545.
  
-Save this example smart contract: https://github.com/cszy/ethereum-examples/blob/master/example.sol
+Save this example smart contract, which is written in **Solidity**: https://github.com/cszy/ethereum-examples/blob/master/example.sol
 
 This smart contract is for a poll, where users can vote for their favorite cryptocurrency.
  
@@ -80,4 +80,10 @@ Now see the total votes for Ether.
  
 ## Example 2 - TestRPC Via Browser
 
+Next, we can interact with this contract in a web browser:
 
+Save these files and open them in a browser:
+
+https://github.com/cszy/ethereum-examples/blob/master/exampleTestRPCWeb/index.html
+
+https://github.com/cszy/ethereum-examples/blob/master/exampleTestRPCWeb/index.js
