@@ -65,7 +65,7 @@ Vote for Ether. To vote from another account, use web3.eth.accounts[1], and so o
 `> contractInstance.voteForToken('Ether', {from: web3.eth.accounts[0]})`
  
 Now see the total votes for Ether.
-`> contractInstance.totalVotesFor.call(‘Joe Smith’).toLocaleString()`
+`> contractInstance.totalVotesFor.call(‘Ether’).toLocaleString()`
  
 ## Example 2 - TestRPC Via Browser
 
