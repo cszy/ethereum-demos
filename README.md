@@ -14,17 +14,17 @@ References: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cry
  
 Install testrpc, a Node-based Ethereum client (effectively a simulated blockchain).
 
-`> npm install -g ethereumjs-testrpc`
+`$ npm install -g ethereumjs-testrpc`
  
 Install web3, the Ethereum Javascript API.
 
-`> npm install -g web3`
+`$ npm install -g web3`
  
 Install Solidity (the main programming language that runs on the EVM) compiler.
 
-`> npm install -g solc`
+`$ npm install -g solc`
  
-`> testrpc`
+`$ testrpc`
  
 You’ll see addresses for 10 test accounts, as well as the information that this is running on localhost:8545.
  
@@ -34,47 +34,47 @@ This example smart contract allows us to conduct a poll, where users can vote fo
  
 Now, we’ll compile this contract and deploy it to the example blockchain.
  
-`> node`
+`$ node`
  
-`> Web3 = require('web3')`
+`$ Web3 = require('web3')`
  
-`> web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));`
+`$ web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));`
  
-`> code = fs.readFileSync('example.sol').toString()`
+`$ code = fs.readFileSync('example.sol').toString()`
  
-`> solc = require('solc')`
+`$ solc = require('solc')`
  
-`> compiledCode = solc.compile(code)`
+`$ compiledCode = solc.compile(code)`
  
-`> compiledCode`
+`$ compiledCode`
  
 You’ll see the output of your compiled code. We’re most interested in the **bytecode** and the **interface** (also called the **ABI**).
 
-`> abiDefinition = JSON.parse(compiledCode.contracts[':Example'].interface)`
+`$ abiDefinition = JSON.parse(compiledCode.contracts[':Example'].interface)`
  
-`> ExampleContract = web3.eth.contract(abiDefinition)`
+`$ ExampleContract = web3.eth.contract(abiDefinition)`
  
-`> byteCode = compiledCode.contracts[':Example'].bytecode`
+`$ byteCode = compiledCode.contracts[':Example'].bytecode`
  
 The contract is now ready to be deployed to the example TestRPC blockchain.
  
 Ether from the account specified in the “from” will pay the **gas** required for miners to execute the contract.
 
-`> deployedContract = ExampleContract.new(['Bitcoin','Ether','Litecoin'],{data: byteCode, from: web3.eth.accounts[0], gas: 5000000})`
+`$ deployedContract = ExampleContract.new(['Bitcoin','Ether','Litecoin'],{data: byteCode, from: web3.eth.accounts[0], gas: 5000000})`
 
-`> contractInstance = ExampleContract.at(deployedContract.address)`
+`$ contractInstance = ExampleContract.at(deployedContract.address)`
  
 Check how many votes Ether has.
 
-`> contractInstance.totalCountFor.call('Ether')`
+`$ contractInstance.totalCountFor.call('Ether')`
  
 Vote for Ether. To vote from another account, use web3.eth.accounts[1], and so on.
 
-`> contractInstance.voteForToken('Ether', {from: web3.eth.accounts[0]})`
+`$ contractInstance.voteForToken('Ether', {from: web3.eth.accounts[0]})`
  
 Now see the total votes for Ether.
 
-`> contractInstance.totalVotesFor.call(‘Ether’).toLocaleString()`
+`$ contractInstance.totalVotesFor.call(‘Ether’).toLocaleString()`
  
 ## Example 2 - TestRPC Via Browser
 
