@@ -8,7 +8,7 @@ The ledger of activities provided by the blockchain, paired with smart contracts
  
 These examples are designed to spark ideas around blockchain and DApps.
 
-Reference articles: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cryptocurrency/dp/1484225341/, https://medium.com/@mvmurthy/ethereum-for-web-developers-890be23d1d0c, https://blockgeeks.com/guides/how-to-learn-solidity/, https://www.ethereum.org/token
+References: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cryptocurrency/dp/1484225341/, https://medium.com/@mvmurthy/ethereum-for-web-developers-890be23d1d0c, https://blockgeeks.com/guides/how-to-learn-solidity/, https://www.ethereum.org/token
  
 ## Example 1 - TestRPC Via Command Line
  
