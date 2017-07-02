@@ -7,10 +7,12 @@ DApps allow **smart contracts** (digital agreements between parties) to be execu
 The ledger of activities provided by the blockchain, paired with smart contracts, enable a wide range of potential use cases. For example, writing code that fulfills code quality, testing, peer review, and version control standards specified in a smart contract could trigger other events, like the release of “points” from an underlying user story and automation (build/deploy) events. The blockchain would effectively serve as the backbone for all events related to a unit of functionality, holding an immutable record of software development, testing, and CI/CD activities.
  
 These examples are designed to spark ideas around blockchain and DApps.
+
+Reference articles: https://medium.com/@mvmurthy/ethereum-for-web-developers-890be23d1d0c, https://blockgeeks.com/guides/how-to-learn-solidity/, https://www.ethereum.org/token
  
 ## Example 1 - TestRPC Via Command Line
  
-Install testrpc, a Node-based Ethereum client (effectively, a simulated blockchain).
+Install testrpc, a Node-based Ethereum client (effectively a simulated blockchain).
 `> npm install -g ethereumjs-testrpc`
  
 Install web3, the Ethereum Javascript API.
