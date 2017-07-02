@@ -12,15 +12,15 @@ References: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cry
  
 ## Example 1 - TestRPC Via Command Line
  
-Install testrpc, a Node-based Ethereum client (effectively a simulated blockchain).
+Install *TestRPC*, a Node-based Ethereum client (effectively a simulated blockchain).
 
 `$ npm install -g ethereumjs-testrpc`
  
-Install web3, the Ethereum Javascript API.
+Install *web3.js*, the Ethereum Javascript API.
 
 `$ npm install -g web3`
  
-Install **Solidity** (the main programming language that runs on the EVM) compiler.
+Install the **Solidity compiler** (**Solidity** is the most popular programming language that runs on the EVM).
 
 `$ npm install -g solc`
 
@@ -30,7 +30,7 @@ From your terminal, run:
  
 You’ll see addresses for 10 test accounts, as well as the information that this is running on localhost:8545.
  
-Save this example smart contract, which is written in **Solidity**: https://github.com/cszy/ethereum-examples/blob/master/example.sol
+Save this example smart contract, which is written in Solidity: https://github.com/cszy/ethereum-examples/blob/master/example.sol
 
 This smart contract is for a poll, where users can vote for their favorite cryptocurrency.
  
