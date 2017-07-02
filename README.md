@@ -40,45 +40,43 @@ From another terminal window:
  
 `$ node`
  
-`$ Web3 = require('web3')`
+`> Web3 = require('web3');`
  
-`$ web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));`
+`> web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));`
  
-`$ code = fs.readFileSync('example.sol').toString()`
+`> code = fs.readFileSync('example.sol').toString();`
  
-`$ solc = require('solc')`
+`> solc = require('solc');`
  
-`$ compiledCode = solc.compile(code)`
- 
-`$ compiledCode`
+`> compiledCode = solc.compile(code);`
  
 You’ll see the output of your compiled code. We’re most interested in the **bytecode** and the **interface** (also called the **ABI**).
 
-`$ abiDefinition = JSON.parse(compiledCode.contracts[':Example'].interface)`
+`> abiDefinition = JSON.parse(compiledCode.contracts[':Example'].interface);`
  
-`$ ExampleContract = web3.eth.contract(abiDefinition)`
+`> ExampleContract = web3.eth.contract(abiDefinition);`
  
-`$ byteCode = compiledCode.contracts[':Example'].bytecode`
+`> byteCode = compiledCode.contracts[':Example'].bytecode;`
  
 The contract is now ready to be deployed to the example TestRPC blockchain.
  
 Ether from the account specified in the “from” will pay the **gas** required for miners to execute the contract.
 
-`$ deployedContract = ExampleContract.new(['Bitcoin','Ether','Litecoin'],{data: byteCode, from: web3.eth.accounts[0], gas: 5000000})`
+`> deployedContract = ExampleContract.new(['Bitcoin','Ether','Litecoin'],{data: byteCode, from: web3.eth.accounts[0], gas: 4000000});`
 
-`$ contractInstance = ExampleContract.at(deployedContract.address)`
+`> contractInstance = ExampleContract.at(deployedContract.address);`
  
 Check how many votes Ether has.
 
-`$ contractInstance.totalCountFor.call('Ether')`
+`> contractInstance.totalVotesByToken.call('Ether').toLocaleString();`
  
 Vote for Ether. To vote from another account, use web3.eth.accounts[1], and so on.
 
-`$ contractInstance.voteForToken('Ether', {from: web3.eth.accounts[0]})`
+`> contractInstance.castVote('Ether', {from: web3.eth.accounts[0]});`
  
 Now see the total votes for Ether.
 
-`$ contractInstance.totalVotesFor.call(‘Ether’).toLocaleString()`
+`> contractInstance.totalVotesByToken.call('Ether').toLocaleString();`
  
 ## Example 2 - TestRPC Via Browser
 
