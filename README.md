@@ -104,7 +104,7 @@ With the result of `contractInstance.address`.
 
 **Truffle** is a popular development framework for Ethereum billed as "a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier".
 
-We'll move our code from Example 2 to use Truffle.
+We'll alter our code from Example 2 to use Truffle.
 
 To begin, install the necessary dependencies:
 
@@ -122,7 +122,7 @@ To begin, install the necessary dependencies:
  
 `$ npm install -g webpack`
 
-Also, ensure that you are on a recent version of Node. For example:
+Also, ensure that you're on a recent version of Node. For example:
 
 `$ nvm install 6.11.0`
 
@@ -130,25 +130,27 @@ From the directory that you want to use for your project:
 
 `$ truffle init webpack`
  
-Truffle will now be initialized with boilerplate code.
+Truffle will be initialized with boilerplate code. Overview of the directories that were created:
 
-`app` contains the core application code. Update the following files:
+`/app` contains the core application code. Update the following files:
 
 `app.js` should contain this code:
-
+https://github.com/cszy/ethereum-examples/blob/master/exampleTruffle/app/javascripts/app.js
 
 `index.html` should contain this code:
+https://github.com/cszy/ethereum-examples/blob/master/exampleTruffle/app/index.html
 
+`/contracts` are where we'll put our Solidity contracts. You'll see three contracts: `ConvertLib.sol`, `MetaCoin.sol`, and `Migrations.sol`. We'll need `Migrations.sol` (explained below), but feel free to delete the others.
 
-`contracts` are where we'll put our Solidity contracts.
+Add another contract to this folder called `example.sol`, which contains this code:
+https://github.com/cszy/ethereum-examples/blob/master/exampleTruffle/contracts/example.sol
 
-`example.sol` should contain this code:
+`/migrations` contains Javascript files that govern the deployment contracts to the blockchain. This starts with 1_initial_migration.js, which deploys the Migrations.sol contract.
 
+Migrations.sol serves as a default contract that sits on the blockchain, containing the latest version of the contract(s) that you've deployed. Rather than re-deploying your contract from scratch every time there is a change, Truffle allows contracts to evolve over time via migrations, similar to a database.
 
-`migrations` contains Javascript files that govern the deployment contracts to the blockchain. This starts with migration 1 (1_initial_migration.js), which deploys the Migrations.sol contract. Migrations.sol serves as a default contract that sits on the blockchain, containing the latest version of the contract(s) that you've deployed. Rather than re-deploying your contract from scratch every time there is a change, Truffle allows contracts to evolve over time via migrations, similar to a database.
-
-`2_deploy_contracts.js` should contain this code:
-
+`2_deploy_contracts.js` is used to migrate our example.sol contract onto the blockchain. It should contain this code:
+https://github.com/cszy/ethereum-examples/blob/master/exampleTruffle/migrations/2_deploy_contracts.js
 
 If you are running Ethereum Wallet, TestRPC, or Metamask stop them now.
 
