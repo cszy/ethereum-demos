@@ -30,7 +30,7 @@ From your terminal, run:
  
 You’ll see addresses for 10 test accounts, as well as the information that this is running on localhost:8545.
  
-Save this example smart contract, which is written in Solidity: https://github.com/cszy/ethereum-examples/blob/master/example.sol
+Save this example smart contract, which is written in Solidity: https://github.com/cszy/ethereum-examples/blob/master/exampleTestRPCWeb/example.sol
 
 This smart contract is for a poll, where users can vote for their favorite cryptocurrency.
  
