@@ -1,0 +1,88 @@
+INFO [07-03|15:10:07] Starting peer-to-peer node               instance=Geth/v1.6.6-stable-10a45cb5/darwin-amd64/go1.8.3
+INFO [07-03|15:10:07] Allocated cache and file handles         database=/Users/chrisszymansky/Library/Ethereum/testnet/geth/chaindata cache=128 handles=1024
+INFO [07-03|15:10:07] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Metropolis: 9223372036854775807 Engine: ethash}"
+INFO [07-03|15:10:07] Disk storage enabled for ethash caches   dir=/Users/chrisszymansky/Library/Ethereum/testnet/geth/ethash count=3
+INFO [07-03|15:10:07] Disk storage enabled for ethash DAGs     dir=/Users/chrisszymansky/.ethash                              count=2
+INFO [07-03|15:10:07] Initialising Ethereum protocol           versions="[63 62]" network=3
+INFO [07-03|15:10:07] Loaded most recent local header          number=1233368 hash=6d5d70…b1e93f td=840832135319261
+INFO [07-03|15:10:07] Loaded most recent local full block      number=1233368 hash=6d5d70…b1e93f td=840832135319261
+INFO [07-03|15:10:07] Loaded most recent local fast block      number=1233368 hash=6d5d70…b1e93f td=840832135319261
+WARN [07-03|15:10:07] Blockchain not empty, fast sync disabled 
+INFO [07-03|15:10:07] Starting P2P networking 
+INFO [07-03|15:10:10] UDP listener up                          self=enode://962127e40060b1d91aec7033b2c5ced557245334bb7b3567ff04624930e998a995395c3962f4bc2a0359ed5c2722aa6e6e5811aa22db138405039ee000ae8ab6@[::]:30303
+INFO [07-03|15:10:10] RLPx listener up                         self=enode://962127e40060b1d91aec7033b2c5ced557245334bb7b3567ff04624930e998a995395c3962f4bc2a0359ed5c2722aa6e6e5811aa22db138405039ee000ae8ab6@[::]:30303
+INFO [07-03|15:10:10] IPC endpoint opened: /Users/chrisszymansky/Library/Ethereum/testnet/geth.ipc 
+INFO [07-03|15:10:10] HTTP endpoint opened: http://127.0.0.1:8545 
+INFO [07-03|15:10:37] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=8.972ms mgasps=0.000 number=1233369 hash=636a79…e906f3
+INFO [07-03|15:10:40] Block synchronisation started 
+WARN [07-03|15:10:41] Synchronisation failed, retrying         err="block body download canceled (requested)"
+INFO [07-03|15:10:50] Imported new chain segment               blocks=4 txs=17 mgas=0.940 elapsed=29.206ms mgasps=32.175 number=1233372 hash=fe1c76…ed187c ignored=12
+INFO [07-03|15:10:51] New wallet appeared                      url=keystore:///Users/chrisszymansk… status=Locked
+INFO [07-03|15:11:09] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.788ms  mgasps=0.000  number=1233373 hash=21dc3f…56bee4
+INFO [07-03|15:11:11] Imported new chain segment               blocks=1 txs=1  mgas=0.044 elapsed=4.794ms  mgasps=9.114  number=1233374 hash=b0d3df…33c0ee
+INFO [07-03|15:11:15] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.900ms  mgasps=0.000  number=1233375 hash=40e9d2…5e9d5a
+INFO [07-03|15:11:32] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.957ms  mgasps=0.000  number=1233376 hash=cc4d1e…fa6e05
+INFO [07-03|15:11:34] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=7.469ms  mgasps=0.000  number=1233377 hash=7d3d43…bdfc0e
+INFO [07-03|15:11:42] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.575ms  mgasps=0.000  number=1233378 hash=5c1d18…edacb1
+INFO [07-03|15:12:08] Imported new chain segment               blocks=1 txs=1  mgas=1.199 elapsed=10.040ms mgasps=119.408 number=1233379 hash=5f8a04…cd4577
+INFO [07-03|15:12:08] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.475ms  mgasps=0.000   number=1233379 hash=55bbf2…f19a79
+INFO [07-03|15:12:21] Imported new chain segment               blocks=1 txs=1  mgas=1.199 elapsed=12.756ms mgasps=93.984  number=1233380 hash=d08652…e249e9
+INFO [07-03|15:12:36] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.368ms  mgasps=0.000   number=1233381 hash=53670f…76eefd
+INFO [07-03|15:12:38] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.698ms  mgasps=0.000   number=1233382 hash=a5e9b1…34eb41
+INFO [07-03|15:13:44] Imported new chain segment               blocks=3 txs=3  mgas=0.201 elapsed=15.313ms mgasps=13.100  number=1233384 hash=69cef7…4c1c64 ignored=8
+INFO [07-03|15:13:54] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.546ms  mgasps=0.000   number=1233383 hash=ff8a92…ff358a
+INFO [07-03|15:14:09] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=5.111ms  mgasps=0.000   number=1233385 hash=3268c0…8127e6
+INFO [07-03|15:14:51] Imported new chain segment               blocks=1 txs=1  mgas=0.021 elapsed=8.610ms  mgasps=2.439   number=1233386 hash=eb5661…ad681b
+INFO [07-03|15:14:53] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.224ms  mgasps=0.000   number=1233387 hash=0a970a…2f0a4a
+INFO [07-03|15:15:35] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=12.207ms mgasps=0.000   number=1233388 hash=146d6b…51cf96
+INFO [07-03|15:15:43] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=7.281ms  mgasps=0.000   number=1233389 hash=e72048…75719b
+INFO [07-03|15:15:58] Imported new chain segment               blocks=1 txs=1  mgas=0.028 elapsed=12.834ms mgasps=2.155   number=1233390 hash=97ce99…42718b
+INFO [07-03|15:16:29] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.252ms  mgasps=0.000   number=1233391 hash=04eb86…ac447d
+INFO [07-03|15:16:30] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=6.436ms  mgasps=0.000   number=1233391 hash=f020b9…308a0c
+INFO [07-03|15:16:53] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=11.624ms mgasps=0.000   number=1233392 hash=400f3d…f4dd96
+INFO [07-03|15:17:03] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.142ms  mgasps=0.000   number=1233393 hash=464838…7a1e59
+INFO [07-03|15:17:24] Imported new chain segment               blocks=1 txs=2  mgas=0.652 elapsed=5.686ms  mgasps=114.611 number=1233394 hash=0e361b…3886bf
+INFO [07-03|15:17:28] Imported new chain segment               blocks=1 txs=1  mgas=0.021 elapsed=4.266ms  mgasps=4.923   number=1233395 hash=b555c4…359a06
+INFO [07-03|15:17:38] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=11.538ms mgasps=0.000   number=1233396 hash=a01338…25a4f3
+INFO [07-03|15:17:55] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=10.348ms mgasps=0.000   number=1233397 hash=2ca3f2…639e6c
+INFO [07-03|15:18:11] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=10.557ms mgasps=0.000   number=1233398 hash=b7834f…2ca58d
+INFO [07-03|15:18:13] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=10.841ms mgasps=0.000   number=1233396 hash=5abad9…9aee75
+INFO [07-03|15:18:19] Imported new chain segment               blocks=1 txs=2  mgas=0.077 elapsed=15.428ms mgasps=4.963   number=1233399 hash=f4e607…5ccf8e
+INFO [07-03|15:18:28] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=7.959ms  mgasps=0.000   number=1233400 hash=a4f1a8…efbfd1
+INFO [07-03|15:18:32] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.731ms  mgasps=0.000   number=1233401 hash=07449f…a416a4
+INFO [07-03|15:18:42] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.415ms  mgasps=0.000   number=1233402 hash=e72df9…f78135
+INFO [07-03|15:18:44] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.388ms  mgasps=0.000   number=1233403 hash=3a0ab3…c0ccdf
+INFO [07-03|15:18:49] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.934ms  mgasps=0.000   number=1233403 hash=8c974e…0b0c8e
+INFO [07-03|15:18:51] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=6.590ms  mgasps=0.000   number=1233404 hash=e5b200…b30081
+INFO [07-03|15:19:12] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.204ms  mgasps=0.000   number=1233405 hash=7e9eca…0ee90f
+INFO [07-03|15:19:14] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.899ms  mgasps=0.000   number=1233406 hash=374788…e76bc2
+INFO [07-03|15:19:36] Imported new chain segment               blocks=1 txs=1  mgas=0.080 elapsed=6.002ms  mgasps=13.252  number=1233407 hash=d74e2d…b0ffbe
+INFO [07-03|15:20:18] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=6.049ms  mgasps=0.000   number=1233408 hash=50fe7f…2c0bab
+INFO [07-03|15:20:42] Imported new chain segment               blocks=1 txs=3  mgas=1.434 elapsed=16.154ms mgasps=88.748  number=1233409 hash=bb015a…1c7314
+INFO [07-03|15:20:45] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.690ms  mgasps=0.000   number=1233410 hash=6eb7fe…05a68d
+INFO [07-03|15:20:57] Imported new chain segment               blocks=1 txs=1  mgas=0.100 elapsed=3.881ms  mgasps=25.656  number=1233411 hash=befee8…801a32
+INFO [07-03|15:21:01] Imported new chain segment               blocks=1 txs=1  mgas=0.049 elapsed=4.918ms  mgasps=9.968   number=1233412 hash=9fe23d…7ac8bf
+INFO [07-03|15:21:19] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=3.840ms  mgasps=0.000   number=1233413 hash=05c98a…ee4f26
+INFO [07-03|15:21:33] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=6.953ms  mgasps=0.000   number=1233414 hash=da69e1…861ace
+WARN [07-03|15:22:44] Header broke chain ordering              number=1233416 hash=457816…70bffd expected=1233399
+WARN [07-03|15:22:44] Synchronisation failed, dropping peer    peer=336c65e1852b036f err="action from bad peer ignored"
+INFO [07-03|15:23:07] Imported new chain segment               blocks=5 txs=10 mgas=0.241 elapsed=21.708ms mgasps=11.099  number=1233418 hash=30c13a…54b5aa ignored=15
+INFO [07-03|15:23:17] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=7.855ms  mgasps=0.000   number=1233419 hash=ada180…85100c
+INFO [07-03|15:23:30] Imported new chain segment               blocks=1 txs=2  mgas=0.107 elapsed=12.405ms mgasps=8.650   number=1233420 hash=256cad…95254b
+INFO [07-03|15:24:03] Imported new chain segment               blocks=1 txs=1  mgas=0.042 elapsed=11.595ms mgasps=3.586   number=1233421 hash=5b8dfb…116591
+INFO [07-03|15:24:07] Imported new chain segment               blocks=1 txs=4  mgas=1.230 elapsed=9.037ms  mgasps=136.107 number=1233422 hash=455f3c…9afb6a
+INFO [07-03|15:24:24] Imported new chain segment               blocks=1 txs=0  mgas=0.000 elapsed=4.015ms  mgasps=0.000   number=1233423 hash=198948…a3f819
+INFO [07-03|15:24:26] Imported new chain segment               blocks=1 txs=4  mgas=1.230 elapsed=7.872ms  mgasps=156.245 number=1233422 hash=4270fe…f4f01b
+INFO [07-03|15:24:29] Imported new chain segment               blocks=1 txs=2  mgas=0.049 elapsed=8.909ms  mgasps=5.462   number=1233424 hash=c3c3ea…91bb29
+INFO [07-03|15:24:48] Imported new chain segment               blocks=1 txs=2  mgas=0.247 elapsed=7.547ms  mgasps=32.661  number=1233425 hash=2e9c47…e49e83
+INFO [07-03|15:24:49] Imported new chain segment               blocks=1 txs=2  mgas=0.247 elapsed=6.136ms  mgasps=40.171  number=1233425 hash=8bc8ca…bc0b85
+INFO [07-03|15:24:50] Imported new chain segment               blocks=1 txs=2  mgas=0.049 elapsed=8.797ms  mgasps=5.531   number=1233424 hash=734fea…ced664
+INFO [07-03|15:24:51] Imported new chain segment               blocks=1 txs=1  mgas=0.027 elapsed=8.866ms  mgasps=2.999   number=1233425 hash=6b179a…bfe177
+INFO [07-03|15:25:16] Imported new chain segment               blocks=1 txs=2  mgas=0.082 elapsed=7.558ms  mgasps=10.831  number=1233426 hash=7f6f8e…a961df
+INFO [07-03|15:25:22] HTTP endpoint closed: http://127.0.0.1:8545 
+INFO [07-03|15:25:22] IPC endpoint closed: /Users/chrisszymansky/Library/Ethereum/testnet/geth.ipc 
+INFO [07-03|15:25:22] Blockchain manager stopped 
+INFO [07-03|15:25:22] Stopping Ethereum protocol 
+INFO [07-03|15:25:22] Ethereum protocol stopped 
+INFO [07-03|15:25:22] Transaction pool stopped 
+INFO [07-03|15:25:22] Database closed                          database=/Users/chrisszymansky/Library/Ethereum/testnet/geth/chaindata
