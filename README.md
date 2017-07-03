@@ -14,6 +14,8 @@ References: https://www.amazon.com/Introducing-Ethereum-Solidity-Foundations-Cry
  
 Install **TestRPC**, a Node-based Ethereum client (effectively a simulated blockchain).
 
+We'll do this directly through Node and Javascript for now, which will ensure that all core concepts are covered. In the next example, we'll move to something that is more abstracted and easier to use.
+
 `$ npm install -g ethereumjs-testrpc`
  
 Install **web3.js**, the Ethereum Javascript API.
@@ -82,8 +84,101 @@ Now see the total votes for Ether.
 
 Next, we can interact with this contract in a web browser:
 
-Save these files and open them in a browser:
+Save these files:
 
 https://github.com/cszy/ethereum-examples/blob/master/exampleTestRPCWeb/index.html
 
 https://github.com/cszy/ethereum-examples/blob/master/exampleTestRPCWeb/index.js
+
+In your Node console, run:
+
+`> contractInstance.address`
+
+In index.js, replace the value here:
+
+exampleContractInstance = ExampleContract.at('0x6c9567db46d04429665747e50dca076743a941ab2');
+
+With the result of `contractInstance.address`.
+
+## Example 3 - TestRPC Via Truffle
+
+**Truffle** is a popular development framework for Ethereum billed as "a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier".
+
+We'll move our code from Example 2 to use Truffle.
+
+To begin, install the necessary dependencies:
+
+`$ brew tap ethereum/ethereum`
+
+`$ brew install ethereum`
+ 
+`$ npm install -g truffle`
+
+`$ npm install -g truffle-expect`
+
+`$ npm install -g truffle-config`
+
+`$ npm install -g web3`
+ 
+`$ npm install -g webpack`
+
+Also, ensure that you are on a recent version of Node. For example:
+
+`$ nvm install 6.11.0`
+
+From the directory that you want to use for your project:
+
+`$ truffle init webpack`
+ 
+Truffle will now be initialized with boilerplate code.
+
+`app` contains the core application code. Update the following files:
+
+`app.js` should contain this code:
+
+
+`index.html` should contain this code:
+
+
+`contracts` are where we'll put our Solidity contracts.
+
+`example.sol` should contain this code:
+
+
+`migrations` contains Javascript files that govern the deployment contracts to the blockchain. This starts with migration 1 (1_initial_migration.js), which deploys the Migrations.sol contract. Migrations.sol serves as a default contract that sits on the blockchain, containing the latest version of the contract(s) that you've deployed. Rather than re-deploying your contract from scratch every time there is a change, Truffle allows contracts to evolve over time via migrations, similar to a database.
+
+`2_deploy_contracts.js` should contain this code:
+
+
+If you are running Ethereum Wallet, TestRPC, or Metamask stop them now.
+
+Start TestRPC again:
+
+`$ testrpc`
+
+In a new terminal window run:
+ 
+`$ truffle compile --all`
+
+A build folder will be created and you'll see a confirmation that the project compiled:
+
+`Writing artifacts to ./build/contracts`
+
+`$ truffle migrate --reset`
+
+Your contract will be deployed to the network and you'll see a confirmation:
+
+`Deploying Example...
+  Example: 0x981f327df660daac798c2e2eaf0af8edc4ec2d02
+Saving successful migration to network...
+Saving artifacts...`
+
+Finally, the project is ready to be run in a web browser. Run:
+
+`npm run dev`
+
+You'll see a confirmation:
+
+`Project is running at http://localhost:8080/`
+
+Visit this URL and you'll be able to interact with your contract.

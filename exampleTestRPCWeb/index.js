@@ -4,7 +4,7 @@ abi = JSON.parse('[{"constant":false,"inputs":[{"name":"token","type":"bytes32"}
 ExampleContract = web3.eth.contract(abi);
 
 // Replace this with the value from your Node console > contractInstance.address
-exampleContractInstance = ExampleContract.at('0x8946bac96fd5e35f3665da80bc2dd47f6600e391');
+exampleContractInstance = ExampleContract.at('0x6c9567db46d04429665747e50dca076743a941ab2');
 
 var tokens = document.querySelectorAll(".token");
 
