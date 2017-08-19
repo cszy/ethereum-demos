@@ -185,7 +185,7 @@ Visit this URL and you'll be able to interact with your contract in your web bro
 
 ## Example 4 - Testnet and Truffle
 
-Now we're going to move from using TestRPC to the Ethereum Ropsten Testnet. This is a test blockchain that is available to the public, but no real currency is transacted on. Ropstein blocks and transactions can be viewed here:
+Now we're going to move from using TestRPC to the Ethereum Ropsten Testnet. This is a test blockchain that is available to the public, but no real currency is transacted on. Ropsten blocks and transactions can be viewed here:
 
 https://ropsten.etherscan.io/
 
